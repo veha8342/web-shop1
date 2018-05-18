@@ -1,13 +1,11 @@
 /*RESET START*/
 *{
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 body {
     margin: 0 auto;
     color: #111;
-    background: #fff;
     font: 12px/1 'Harmonia_regular', sans-serif;
     background-color: #f4f6f8;
 }
@@ -18,11 +16,15 @@ h1,h2,h3,h4,h5,h6,p{
 img{
     max-width: 100%;
 }
- a:focus , a:hover {
+a{
+    color: #000;
+}
+
+a:focus , a:hover {
     color: inherit;
     text-decoration: none;
     color: #ff5912;
-     text-decoration: none;
+    text-decoration: none;
 
 }
 
@@ -52,15 +54,28 @@ label{
 /*DEFAULT CLASSES START*/
 
 .flex-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .align-center{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .justify-sp-bw{
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+.orange-text{
+    color: #ff5912;
 }
 
 
@@ -71,6 +86,39 @@ label{
     display: inline-block;
 }
 
+.title{
+    text-transform: uppercase;
+    font-family: 'Harmonia_black';
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.title.big{
+    font-size: 52px;
+}
+.user-nav .custom-icon {
+    position: relative;
+}
+
+.product-title{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+}
+
+.basket-count{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: -17px;
+    left: 4px;
+    text-align: center;
+    line-height: 1.5;
+}
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -118,6 +166,33 @@ header .bottom-header .user-nav{
 header .bottom-header .user-nav a + a{
     margin-left: 30px;
 }
+
+.items-carousel{
+    min-height: 650px;
+    background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
+}
+
+/*MAIN START*/
+
+.items-carousel-description{
+    padding: 230px 0;
+}
+
+
+.items-carousel-description p{
+    font-family: 'Harmonia_regular';
+    font-size: 16px;
+    padding: 18px 0 60px 0;
+}
+
+.price-wrapper a{
+    margin-left: 30px;
+}
+
+.price-wrapper a .product-title{
+    padding-left: 10px;
+}
+
 
 /*DEFAULT COMPONENT END*/
 
