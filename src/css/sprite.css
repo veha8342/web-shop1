@@ -16,7 +16,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-add-to-cart-hover-ic:hover {
+.icon-add-to-cart-hover-ic {
   background-image: url(../img/sprite.png);
   background-position: 0px -38px;
   width: 22px;
@@ -88,7 +88,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 12px;
   height: 12px;
 }
-.icon-search-hover-ic-{
+.icon-search-hover-ic- {
   background-image: url(../img/sprite.png);
   background-position: -81px 0px;
   width: 18px;
