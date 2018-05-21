@@ -86,6 +86,17 @@ label{
     background-color: green;
 }
 
+.white-bg{
+    background-color: #fff;
+}
+
+.light-orang-bg{
+    background-color: #ff9060;
+}
+
+.orange-bg{
+    background-color: #ff5912;
+}
 
 /*DEFAULT CLASSES END*/
 
@@ -134,6 +145,31 @@ label{
     text-align: center;
     line-height: 1.5;
 }
+
+.default-section{
+    padding: 60px 0;
+}
+
+.subscribe-form{
+    padding: 37px 42px;
+}
+
+.subscribe-input-group{
+    margin-right: 30px;
+}
+.subscribe-input-group label{
+    vertical-align: middle;
+    margin-right: 10px;
+    max-width: 255px;
+}
+
+.subscribe-input{
+    color: #7c8791;
+    font-size: 14px;
+    font-family: 'Harmonia_italic';
+
+}
+
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -210,9 +246,7 @@ header .bottom-header .user-nav a + a{
     padding-left: 10px;
 }
 
-.default-section{
-    padding: 60px 0;
-}
+
 
 .item{
     background-color: #fff;
@@ -337,6 +371,31 @@ header .bottom-header .user-nav a + a{
 
 
 /*ALL STALES START*/
+
+.kit{
+    padding: 10px 60px;
+}
+
+.sales-block{
+    position: relative;
+}
+
+.sales-block > div{
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+}
+
+.sales-block div:first-child{
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0;
+
+}
+
+.sales-block div:last-child{
+    transform: rotate(-45deg) ;
+}
 
 .icon-search-ic:hover{
     background-position: -80px 0;
