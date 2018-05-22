@@ -48,6 +48,10 @@ button{
 label{
     margin-bottom: 0;
 }
+
+.btn{
+    outline: none;
+}
 /*RESET END*/
 
 /*DEFAULT CLASSES START*/
@@ -150,13 +154,23 @@ label{
     padding: 60px 0;
 }
 
+.subscribe-description .product-title{
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+}
+
+.subscribe-description span:nth-child(2){
+    margin-left: 25px;
+    font-size: 14px;
+    font-family: 'Harmonia_italic';
+
+}
+
 .subscribe-form{
     padding: 37px 42px;
 }
 
-.subscribe-input-group{
-    margin-right: 30px;
-}
+
 .subscribe-input-group label{
     vertical-align: middle;
     margin-right: 10px;
@@ -226,12 +240,18 @@ header .bottom-header .user-nav a + a{
 
 
 .footer-logo{
-    padding: 60px 0;
+    padding: 90px 0;
     flex-direction: column;
 }
 
 .footer-logo img{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-logo span{
+    font-size: 14px;
+    font-family: 'Harmonia_regular';
+
 }
 
 .footer-nav{
@@ -240,8 +260,9 @@ header .bottom-header .user-nav a + a{
 }
 
 .footer-nav li{
+    font-family: 'Harmonia_regular';
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -259,10 +280,14 @@ header .bottom-header .user-nav a + a{
     background-color: orangered;
 }
 
-footer .paymenth > span{
+.paymenth .orange-text{
     display: inline-block;
-    margin-bottom: 30px;
+    font-family: 'Harmonia_bold';
+    font-size: 16px;
+    margin-bottom: 22px;
 }
+
+
 
 footer .paymenth .paymenths-method a + a{
     margin-left: 5px;
@@ -415,7 +440,7 @@ footer .paymenth .paymenths-method a + a{
 /*ALL STALES START*/
 
 .kit{
-    padding: 10px 60px;
+    padding: 22px 60px;
 }
 
 .sales-block{
@@ -434,7 +459,39 @@ footer .paymenth .paymenths-method a + a{
     left: 0;
 
 }
+.sale-basket .orange-text{
+    font-size: 22px;
+    font-family: 'Harmonia_bold';
 
+}
+
+.sale-basket .custom-icon{
+    margin-right: 20px;
+}
+.offer span{
+    display: flex;
+    flex-shrink: 1;
+}
+
+.offer span:first-child{
+    font-size: 22px;
+    font-family: 'Harmonia_bold';
+
+}
+
+.offer span + span{
+    margin-top: 15px;
+}
+
+.adv-area{
+    padding: 30px 0;
+}
+
+.adv-area span:first-child{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
 .sales-block div:last-child{
     transform: rotate(-45deg) ;
 }
