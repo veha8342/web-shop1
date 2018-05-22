@@ -240,6 +240,55 @@ header .bottom-header .user-nav a + a{
 }
 
 
+.footer-logo{
+    padding: 60px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.footer-logo img{
+    margin-bottom: 20px;
+}
+
+.footer-nav{
+    width: 50%;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+}
+
+.footer-nav li{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+.footer-nav ul li::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #000;
+    margin-right: 15px;
+}
+
+.footer-nav ul li:hover::before{
+    background-color: orangered;
+}
+
+footer .paymenth > span{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+footer .paymenth .paymenths-method a + a{
+    margin-left: 5px;
+}
 /*MAIN START*/
 
 .items-carousel-description{
