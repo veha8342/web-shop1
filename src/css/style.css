@@ -158,6 +158,29 @@ label{
     padding: 60px 0;
 }
 
+.checkbox-group input[type=checkbox]{
+    display: none;
+}
+
+.checkbox-group label{
+    font-size: 16px;
+    color: #34404b;
+    
+}
+
+.checkbox-group label::before{
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #edf0f2;
+    background-color: #edf0f2;
+}
+
+.checkbox-group input[type=]:checked + label{
+    color: #ff5912;
+}
+
 .subscribe-description .product-title{
     font-family: 'Harmonia_bold';
     font-size: 18px;
