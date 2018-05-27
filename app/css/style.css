@@ -180,7 +180,7 @@ label{
 .checkbox-group label{
     font-size: 16px;
     color: #34404b;
-    
+    cursor: pointer;
 }
 
 .checkbox-group label::before{
@@ -190,12 +190,16 @@ label{
     height: 13px;
     border: 4px solid #edf0f2;
     background-color: #edf0f2;
+    margin-right: 13px;
 }
 
-.checkbox-group input[type=]:checked + label{
+.checkbox-group input[type=checkbox]:checked + label{
     color: #ff5912;
 }
 
+.checkbox-group input[type="checkbox"]:checked + label::before{
+    border-color: #ff5912;
+}
 .subscribe-description .product-title{
     font-family: 'Harmonia_bold';
     font-size: 18px;
@@ -671,5 +675,9 @@ footer .paymenth .paymenths-method a + a{
     font-size: 17px;
     color: #ff5912;
     margin-bottom: 35px;
+}
+
+.category-wrap .item{
+    margin-bottom: 30px;
 }
 /*ALL STALES END*/
