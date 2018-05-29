@@ -680,4 +680,9 @@ footer .paymenth .paymenths-method a + a{
 .category-wrap .item{
     margin-bottom: 30px;
 }
+
+.product-wrap{
+    padding: 100px 125px;
+    background-color: #fff;
+}
 /*ALL STALES END*/
