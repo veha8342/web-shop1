@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
@@ -71,9 +72,40 @@
 
 <!--MAIN START-->
 <main>
+    <div class="product-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="product-carousel">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li data-thumb="img/product-slide-1.jpg">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                                <li data-thumb="img/product-slide-1.jpg">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                                <li data-thumb="img/product-slide-1.jpg">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="product-description">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </main>
+
+<!--MAIN END-->
+<!--FOOTER START-->
 <footer class="white-bg">
     <div class="container">
         <div class="flex-container justify-sp-bw align-center">
@@ -114,7 +146,6 @@
 </footer>
 
 
-<!--MAIN END-->
 
 
 
@@ -129,6 +160,8 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/plugins.min.js""></script>
+<script scr="js/jquery.flexslider-min.js"></script>
+<script src="js/plugins.min.js"></script>
+
 </body>
 </html>

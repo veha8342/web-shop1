@@ -68,7 +68,7 @@ $( function() {
 
 
 
-//  FLEXSLIDERINIT
+//  FLEXSLIDER INIT
     $(window).load(function() {
         $('.flexslider').flexslider({
             animation: "slide",
