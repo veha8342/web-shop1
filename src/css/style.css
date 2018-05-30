@@ -633,4 +633,33 @@ footer .paymenth .paymenths-method a + a{
     padding: 100px 125px;
     background-color: #fff;
 }
+
+.choose-size span{
+    margin-right: 40px;
+}
+.size-radio input[type="radio"]  {
+    display: none;
+}
+
+.size-radio label{
+    font-size: 14px;
+    font-family: 'Harmonia_semibold';
+    color: #34404b;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+.size-radio + .size-radio{
+    margin-left: 20px;
+}
+
+.order-form{
+    padding: 40px 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+
+}
 /*ALL STALES END*/

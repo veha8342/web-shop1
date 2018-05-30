@@ -243,6 +243,10 @@ html[xmlns] .flexslider .slides {
   margin: 0;
   background-color: #f4f6f8;
 }
+
+.flex-control-thumbs li:hover{
+  background-color: #ff5912;
+}
 .flex-control-thumbs img {
   height: 100%;
   cursor: pointer;
@@ -251,10 +255,11 @@ html[xmlns] .flexslider .slides {
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+  opacity: 0.5;
 }
-.flex-control-thumbs img:hover {
-  opacity: 1;
-}
+/*.flex-control-thumbs img:hover {*/
+  /*opacity: 1;*/
+/*}*/
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
