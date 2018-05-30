@@ -13,8 +13,7 @@
 /*border-color: #B3B3B3;*/
 /*}*/
 .jq-number__field input {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	width: 100%;
 	padding: 8px 9px;
 	border: none;
@@ -40,8 +39,7 @@
 /*}*/
 .jq-number__spin:active {
 	background: #F5F5F5;
-	-webkit-box-shadow: inset 1px 1px 3px #DDD;
-	        box-shadow: inset 1px 1px 3px #DDD;
+	box-shadow: inset 1px 1px 3px #DDD;
 }
 .jq-number__spin:after {
 	content: '';

@@ -11,7 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="../src/css/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
@@ -97,7 +97,7 @@
                     <div class="product-description">
                         <div class="order-info">
                             <div class="order-form">
-                                <form name="product-option" class="flex-container align-center justify-sp-bw">
+                                <form id="product-option" class="flex-container align-center justify-sp-bw">
                                     <div class="choose-size flex-container">
                                         <span>Choose size</span>
                                         <div class="size-radio-dtn-group flex-container">
@@ -121,12 +121,18 @@
                                     </div>
                                     <div class="quantity flex-container align-center">
                                         <span>Choose quantity</span>
-                                        <input type="number" name="quantity" class="custom-number">
+                                        <input type="number" name="quantity"   class="custom-number">
                                     </div>
                                 </form>
                             </div>
                             <div class="order-now">
+                                <div class="product-price">
+                                    
+                                </div>
+                                <div class="product-share">
 
+                                </div>
+                                <input type="submit" value="order-now" form="product-option" class="btn btn-default btn-radius">
                             </div>
                         </div>
                     </div>
