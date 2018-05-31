@@ -102,6 +102,9 @@ label{
     background-color: #ff5912;
 }
 
+.btn-radius{
+    border-radius: 50px;
+}
 
 /*DEFAULT CLASSES END*/
 
@@ -662,4 +665,26 @@ footer .paymenth .paymenths-method a + a{
     border-bottom: 1px solid #edeff1;
 
 }
+
+.product-wrap   .order-now{
+    margin-top: 60px;
+}
+
+.product-share{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.product-share ul{
+    align-items: flex-end;
+}
+
+.product-share li + li{
+    margin-left: 15px;
+}
+
+.product-wrap .items-carousel-description{
+    padding: 0;
+}
+
 /*ALL STALES END*/
