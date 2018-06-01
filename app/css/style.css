@@ -177,6 +177,8 @@ label{
     padding: 60px 0;
 }
 
+
+
 .checkbox-group input[type=checkbox]{
     display: none;
 }
@@ -218,8 +220,6 @@ label{
 
 .subscribe-form{
     padding: 37px 42px;
-    margin-left: -15px;
-    margin-right: 15px;
 }
 
 
@@ -234,10 +234,6 @@ label{
     font-size: 14px;
     font-family: 'Harmonia_italic';
 
-}
-
-.new-items{
-    margin-bottom: 120px;
 }
 
 .new-items .fa-star{
@@ -359,6 +355,9 @@ header .bottom-header .user-nav a + a{
     margin-bottom: 60px;
 }
 
+footer{
+    margin-top: 60px;
+}
 
 .footer-logo{
     padding: 90px 0;
@@ -430,7 +429,7 @@ footer .paymenth .paymenths-method a + a{
 .items-carousel-description p{
     font-family: 'Harmonia_regular';
     font-size: 16px;
-    padding: 18px 0 60px 0;
+    padding: 18px 0 40px 0;
 }
 
 .price-wrapper a{
@@ -716,16 +715,26 @@ footer .paymenth .paymenths-method a + a{
     padding: 40px 0;
     border-top: 1px solid #edeff1;
     border-bottom: 1px solid #edeff1;
-
+    border-bottom: 1px solid #edeff1;
 }
+
 
 .product-wrap   .order-now{
     margin-top: 60px;
 }
 
+.product-wrap{
+    margin-bottom: 60px;
+}
+.product-wrap .order-now .product-title{
+    font-size: 20px;
+    font-family: 'Harmonia_bold';
+
+}
+
 .product-share{
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 .product-share ul{
@@ -736,11 +745,18 @@ footer .paymenth .paymenths-method a + a{
 }
 
 .product-share li + li{
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
-.product-wrap .items-carousel-description{
+.product-wrap .items-carousel-description {
     padding: 0;
 }
 
+.product-description .items-carousel-description p {
+    line-height: 1.5;
+}
+
+.product-show .new-items{
+    margin-bottom: 0;
+}
 /*ALL STALES END*/
