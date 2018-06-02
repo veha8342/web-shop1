@@ -52,6 +52,10 @@ label{
 .btn{
     outline: none;
 }
+
+:focus{
+    outline: none;
+}
 /*RESET END*/
 
 /*DEFAULT CLASSES START*/
@@ -623,10 +627,23 @@ footer .paymenth .paymenths-method a + a{
 .aside-section-title{
     font-family: 'Harmonia_bold';
     font-size: 17px;
-    color: #ff5912;
-    margin-bottom: 35px;
 }
 
+.aside-section-title > span{
+    color: #FF5912;
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+
+}
+
+.aside-section-title .checkbox-group{
+    margin-top: 40px;
+}
+
+.aside-section-title .choose-sex li{
+    margin-top: 40px;
+    font-size: 18px;
+}
 .category-wrap .item{
     margin-bottom: 30px;
 }
@@ -713,7 +730,7 @@ footer .paymenth .paymenths-method a + a{
 /*RANGE STYLE*/
 
 .range{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .ui-widget.ui-widget-content{
@@ -741,4 +758,18 @@ footer .paymenth .paymenths-method a + a{
 }
 .range .range-input-reoup input{
     background-color: #dfdfdf3d;
+    width: 40px;
+    border: 0;
+}
+
+.add-range-value{
+    margin-top: 30px;
+}
+
+.range .range-input-reoup label{
+    margin-right: 5px;
+}
+
+#fromValue{
+    margin-right: 20px ;
 }
