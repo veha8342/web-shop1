@@ -774,4 +774,8 @@ footer .paymenth .paymenths-method a + a{
     margin-right: 20px ;
 }
 
+.product-carousel .flexslider .flex-control-nav{
+    transform: rotate(0);
+}
+
 /*RANGE STYLE FINISH*/
