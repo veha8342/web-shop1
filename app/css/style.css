@@ -210,6 +210,17 @@ label{
 .checkbox-group input[type="checkbox"]:checked + label::before{
     border-color: #ff5912;
 }
+
+.subscribe-description{
+    -webkit-box-flex: .5;
+    -webkit-flex-grow: .5;
+        -ms-flex-positive: .5;
+            flex-grow: .5;
+}
+
+
+
+
 .subscribe-description .product-title{
     font-family: 'Harmonia_bold';
     font-size: 18px;
@@ -224,6 +235,18 @@ label{
 
 .subscribe-form{
     padding: 37px 42px;
+}
+
+
+.subscribe-form form{
+    -webkit-box-flex: .3;
+    -webkit-flex-grow: .3;
+        -ms-flex-positive: .3;
+            flex-grow: .3;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 
@@ -466,6 +489,8 @@ footer .paymenth .paymenths-method a + a{
     padding: 0 40px;
 }
 
+
+
 .item .item-title{
     white-space: nowrap;
     overflow: hidden;
@@ -576,6 +601,12 @@ footer .paymenth .paymenths-method a + a{
 .load-more .circle + .circle{
     margin-left: 3px;
 }
+
+@media (max-width: 1199px){
+    .item-description .more-info-on-hover{
+        padding: 0;
+    }
+}
 /*DEFAULT COMPONENT END*/
 
 
@@ -603,6 +634,10 @@ footer .paymenth .paymenths-method a + a{
     left: 0;
 
 }
+.sale-basket{
+    position: relative;
+}
+
 .sale-basket span:nth-child(2){
     font-size: 32px;
     font-family: 'Harmonia_bold';
@@ -617,6 +652,19 @@ footer .paymenth .paymenths-method a + a{
 .sale-basket .custom-icon{
     margin-right: 20px;
 }
+
+.sale-basket:before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 45px;
+    background: #f0f2f3;
+    position: absolute;
+    left: -30%;
+    top: -10px;
+}
+
+
 .offer span{
     display: -webkit-box;
     display: -webkit-flex;
@@ -708,6 +756,19 @@ footer .paymenth .paymenths-method a + a{
 
 .choose-size span{
     margin-right: 40px;
+}
+
+.quantity{
+    position: relative;
+}
+.quantity:before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 26px;
+    background: #f0f2f3;
+    position: absolute;
+    left: -75%;
 }
 .size-radio input[type="radio"]  {
     display: none;
