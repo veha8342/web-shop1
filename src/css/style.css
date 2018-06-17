@@ -532,7 +532,8 @@ footer .paymenth .paymenths-method a + a{
 .more-info-on-hover .item-controls li + li{
     margin-left: 30px;
 }
-.load-more{
+.load-more.btn{
+    width: 100%;
     padding: 25px 0;
     background-color: #fff;
     margin-top: 80px;
@@ -828,6 +829,7 @@ footer .paymenth .paymenths-method a + a{
 
 .item-flexslider{
     position: relative;
+    left: -10px;
 }
 
 .product-carousel .flexslider .flex-control-nav{
