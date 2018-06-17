@@ -829,7 +829,7 @@ footer .paymenth .paymenths-method a + a{
 
 .item-flexslider{
     position: relative;
-    left: -10px;
+    left: 10%;
 }
 
 .product-carousel .flexslider .flex-control-nav{
