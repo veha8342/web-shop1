@@ -89,9 +89,10 @@ $( function() {
 
     //slicknav init
     $('.header-nav').slicknav({
-        appendTo: 'header .bottom-header .flex-container',
+        appendTo: 'header .bottom-header .flex-container.justify-sp-bw',
         label: ''
     });
+
 
 
 

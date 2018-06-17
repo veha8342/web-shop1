@@ -110,6 +110,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav {
   *height: 0;
+  display: none;
 }
 .flex-direction-nav a {
   text-decoration: none;
@@ -196,39 +197,42 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-nav {
   position: absolute;
-  left: 150px;
-  bottom: -5px;                        "ПОЧЕМУ БЕЗ BOTTOM БЛОК УЛЕТАЕТ"
   text-align: center;
-  transform-origin: bottom;
-  transform: rotate(90deg);
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+}
+
+.flex-control-nav li a:hover{
+  background-color: #ff5912;
 }
 .flex-control-nav li {
-  display: inline-block;
+  display: block;
   zoom: 1;
   *display: inline;
 
 }
 
-.flex-control-nav li + li{
-  margin-left: 12px;
+.item-flexslider .flex-control-nav li  + li{
+  margin-top: 10px;
 }
-.flex-control-paging li a {
-  width: 16px;
-  height: 10px;
+
+.item-flexslider .flex-control-paging li a {
+  width: 10px;
+  height: 16px;
   display: block;
   background: #fff;
   cursor: pointer;
-
+  transition: all .3s linear;
+  color: transparent;
 }
 
-.flex-control-paging li a:hover {
-}
 
-.flex-control-paging li a.flex-active {
+
+.item-flexslider .flex-control-paging li a.flex-active {
   background-color: #ff5912;
-  width: 30px;
-  height: 10px;
-  transform: 0.3s linear;
+  width: 10px;
+  height: 35px;
   cursor: default;
 }
 .flex-control-thumbs {
@@ -239,7 +243,6 @@ html[xmlns] .flexslider .slides {
   justify-content: space-between;
 }
 .flex-control-thumbs li {
-  width: 100px;
   height: 70px;
   float: left;
   margin: 0;
