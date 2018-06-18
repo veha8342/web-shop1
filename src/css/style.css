@@ -253,11 +253,6 @@ label{
     margin-bottom: 35px;
 }
 
-@media(max-width: 992px){
-    .new-items .best-offer + .best-offer{
-        margin-top: 20px;
-    }
-}
 .best-offer{
     justify-content: space-around;
 }
@@ -343,17 +338,28 @@ header .bottom-header .user-nav{
     margin-left: auto;
 }
 
+@media(max-width: 991px){
+    header .bottom-header .user-nav{
+        margin: 0;
+    }
+}
+
 header .bottom-header .user-nav a + a{
     margin-left: 30px;
 }
 
-@media(max-width: 992px){
+
+@media(max-width: 991px){
     header .bottom-header .header-nav{
-        margin-left: 20px;
+        display: none;
+    }
+
+    .slicknav_menu{
+        display: block;
     }
 }
 
-@media(max-width: 992px){
+@media(max-width: 991px){
     header .bottom-header .header-nav {
         justify-content: space-between;
     }
@@ -573,9 +579,9 @@ footer .paymenth .paymenths-method a + a{
     }
 }
 
-@media(max-width: 992px){
-    .new-items .col-md-3 + .col-md-3{
-        margin-top: 20px;
+@media(max-width: 991px){
+    .item {
+        margin-top: 30px;
     }
 }
 /*DEFAULT COMPONENT END*/
@@ -584,7 +590,7 @@ footer .paymenth .paymenths-method a + a{
 /*ALL STALES START*/
 
 .kit{
-    padding: 22px 60px;
+    padding: 20px 60px;
 }
 
 .sales-block{
@@ -654,6 +660,12 @@ footer .paymenth .paymenths-method a + a{
 }
 
 
+@media(max-width: 991px){
+    .sale-basket:before{
+        left: -25%;
+    }
+}
+
 .offer span{
     display: flex;
     flex-shrink: 1;
@@ -676,7 +688,7 @@ footer .paymenth .paymenths-method a + a{
 .adv-area span:nth-child(3){
     display: block;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 19px;
 }
 
 
@@ -688,29 +700,30 @@ footer .paymenth .paymenths-method a + a{
 }
 
 
-@media(max-width: 992px){
+@media(max-width: 991px){
     .sale-text{
         left: 10%;
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
     .sale-text{
-        left: 10%;
+        left: 12%;
     }
 }
 
 @media(max-width: 1199px){
     .kit{
-        padding: 22px 20px;
+        padding: 20px 20px;
     }
 }
 
 
-@media(max-width: 992px){
+@media(max-width: 991px){
     .kit{
-        padding: 22px 50px;
+        /*padding: 22px 50px;*/
         margin-bottom: 20px;
+        justify-content: space-around;
     }
 }
 .icon-search-ic:hover{
