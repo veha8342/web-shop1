@@ -195,12 +195,6 @@ label{
     border-color: #ff5912;
 }
 
-.subscribe-description{
-    flex-grow: .5;
-}
-
-
-
 
 .subscribe-description .product-title{
     font-family: 'Harmonia_bold';
@@ -214,6 +208,7 @@ label{
 
 }
 
+
 .subscribe-form{
     padding: 37px 42px;
 }
@@ -224,6 +219,11 @@ label{
     justify-content: space-between;
 }
 
+@media(max-width: 991px){
+    .subscribe-form{
+        flex-wrap: wrap;
+    }
+}
 
 .subscribe-input-group label{
     vertical-align: middle;
@@ -282,17 +282,11 @@ label{
     transition: all .3s linear;
 }
 
-
-
-
-
-/*.best-offer .offer-description::before{*/
-    /*content: '';*/
-    /*display: block;*/
-    /*height: 50px;*/
-    /*width: 2px;*/
-    /*background: #000;*/
-/*}*/
+@media(max-width: 991px){
+    .new-items .best-offer:first-child{
+        margin-bottom: 20px;
+    }
+}
 
 header .top-header{
     border-bottom: 1px solid #edeff1;
@@ -427,6 +421,43 @@ footer{
 
 footer .paymenth .paymenths-method a + a{
     margin-left: 5px;
+}
+
+
+@media(max-width: 991px){
+    .footer-logo{
+        padding: 40px 0;
+    }
+
+    .footer-nav{
+        width: 60%;
+    }
+    .footer-wrap{
+        flex-wrap: wrap;
+    }
+    .paymenth{
+        width: 100%;
+        text-align: end;
+        padding-bottom: 45px;
+    }
+}
+
+@media(max-width: 767px){
+    .footer-wrap{
+        flex-direction: column;
+
+    }
+    .footer-logo{
+        text-align: center;
+    }
+
+    .footer-nav{
+        width: 100%;
+        padding-bottom: 35px;
+    }
+    .paymenth{
+        text-align: center;
+    }
 }
 /*MAIN START*/
 
@@ -722,6 +753,12 @@ footer .paymenth .paymenths-method a + a{
 @media(max-width: 991px){
     .kit{
         /*padding: 22px 50px;*/
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 767px){
+    .kit{
         margin-bottom: 20px;
         justify-content: space-around;
     }
@@ -923,4 +960,7 @@ footer .paymenth .paymenths-method a + a{
     transform: rotate(0);
 }
 
+.flex-control-paging{
+    left: -9%;
+}
 /*RANGE STYLE FINISH*/
