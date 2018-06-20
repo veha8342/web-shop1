@@ -20,6 +20,10 @@ a{
     color: #000;
 }
 
+a{
+    cursor: pointer;
+}
+
 
  a:focus , a:hover {
     color: #ff5912;
