@@ -134,6 +134,9 @@ label{
 
 /*DEFAULT COMPONENT START*/
 
+.header{
+    position: relative;
+}
 
 .custom-icon{
     display: inline-block;
@@ -328,7 +331,6 @@ label{
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
-    background-color: #fff;
 }
 
 header .top-header .phones-list li + li{
@@ -348,9 +350,6 @@ header .top-header .social-nav a + a{
 
 header .top-header .social-nav a:hover{
     color: #ff5912;
-}
-header .bottom-header{
-    background-color: #fff;
 }
 
 header .bottom-header .logo{
@@ -858,6 +857,13 @@ footer .paymenth .paymenths-method a + a{
     padding-top: 120px;
 }
 
+.mobile-siderbar-btn{
+    font-size: 30px;
+    color: #ff5912;
+    display: none;
+    margin-bottom: 20px;
+}
+
 .aside-section{
     padding: 40px 40px;
 }
@@ -953,6 +959,57 @@ footer .paymenth .paymenths-method a + a{
 
 .category-wrap .load-more{
     margin-top: 0;
+}
+
+@media(max-width: 991px){
+
+    .mobile-siderbar-btn{
+        display: inline-block;
+        z-index: 99;
+        position: relative;
+    }
+
+    main.show .mobile-siderbar-btn i{
+        -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    .mobile-siderbar-wrap{
+        position: absolute;
+        -webkit-transform: translateX(-110%);
+            -ms-transform: translateX(-110%);
+                transform: translateX(-110%);
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        z-index: 99;
+    }
+
+    .overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0;
+    }
+    main.show .mobile-siderbar-wrap{
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        left: 0;
+        right: 0;
+    }
+    main.show .overlay{
+        z-index: 98;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, .4);
+    }
 }
 
 .product-share{

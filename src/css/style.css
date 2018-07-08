@@ -118,6 +118,9 @@ label{
 
 /*DEFAULT COMPONENT START*/
 
+.header{
+    position: relative;
+}
 
 .custom-icon{
     display: inline-block;
@@ -295,7 +298,6 @@ label{
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
-    background-color: #fff;
 }
 
 header .top-header .phones-list li + li{
@@ -315,9 +317,6 @@ header .top-header .social-nav a + a{
 
 header .top-header .social-nav a:hover{
     color: #ff5912;
-}
-header .bottom-header{
-    background-color: #fff;
 }
 
 header .bottom-header .logo{
@@ -784,6 +783,13 @@ footer .paymenth .paymenths-method a + a{
     padding-top: 120px;
 }
 
+.mobile-siderbar-btn{
+    font-size: 30px;
+    color: #ff5912;
+    display: none;
+    margin-bottom: 20px;
+}
+
 .aside-section{
     padding: 40px 40px;
 }
@@ -879,6 +885,47 @@ footer .paymenth .paymenths-method a + a{
 
 .category-wrap .load-more{
     margin-top: 0;
+}
+
+@media(max-width: 991px){
+
+    .mobile-siderbar-btn{
+        display: inline-block;
+        z-index: 99;
+        position: relative;
+    }
+
+    main.show .mobile-siderbar-btn i{
+        transform: rotate(-180deg);
+        transition: all .3s linear;
+    }
+
+    .mobile-siderbar-wrap{
+        position: absolute;
+        transform: translateX(-110%);
+        transition: all .3s linear;
+        z-index: 99;
+    }
+
+    .overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0;
+    }
+    main.show .mobile-siderbar-wrap{
+        transform: translateX(0);
+        left: 0;
+        right: 0;
+    }
+    main.show .overlay{
+        z-index: 98;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, .4);
+    }
 }
 
 .product-share{

@@ -11,10 +11,13 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="../src/css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
     <link rel="stylesheet" href="css/style.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +28,7 @@
 </head>
 <body>
 <!-- HEADER START -->
-<header>
+<header class="white-bg header">
     <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-bw">
@@ -48,7 +51,7 @@
                 <div class="logo">
                     <a href="#"><img src="img/logo.png" alt=""></a>
                 </div>
-                <div class="header-nav flex-container justify-sp-bw">
+                <div class="header-nav flex-container">
                     <li><a href="#">Home</a></li>
                     <li><a href="Produts.html">Product</a></li>
                     <li><a href="#">Hot Deals</a></li>
@@ -68,14 +71,19 @@
 
 </header>
 
+
 <!-- HEADER END -->
 
 <!--MAIN START-->
 <main>
     <div class="category-wrap">
         <div class="container">
+            <div class="mobile-siderbar-btn">
+                <i class="fa fa-arrow-circle-right"></i>
+            </div>
+            <div class="overlay"></div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12 mobile-siderbar-wrap">
                     <aside class="sidebar">
                         <div class="aside-section white-bg">
                             <div class="aside-section-title">
@@ -155,10 +163,9 @@
                                 </form>
                             </div>
                         </div>
-
                     </aside>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-xs-12">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="item ">
