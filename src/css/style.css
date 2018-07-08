@@ -78,6 +78,10 @@ label{
     justify-content: space-between;
 }
 
+.flex-wr{
+    flex-wrap: wrap;
+}
+
 .orange-text{
     color: #ff5912;
 }
@@ -215,6 +219,13 @@ label{
 
 }
 
+@media(max-width: 991px){
+    .subscribe-description{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
 .subscribe-form{
     padding: 37px 42px;
@@ -319,6 +330,12 @@ header .top-header .social-nav a:hover{
     color: #ff5912;
 }
 
+@media (max-width: 575px) {
+    .phones-list{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 header .bottom-header .logo{
     padding: 40px 0;
 }
@@ -345,6 +362,12 @@ header .bottom-header .user-nav a + a{
     margin-left: 30px;
 }
 
+@media(max-width: 575px){
+    .user-nav{
+        order: 1;
+        width: 100%;
+    }
+}
 
 @media(max-width: 991px){
     header .bottom-header .header-nav{
@@ -413,6 +436,17 @@ footer{
     background-color: orangered;
 }
 
+@media(max-width: 575px){
+    .footer-nav{
+        flex-wrap: wrap;
+    }
+
+    .footer-nav ul:last-child{
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+    }
+}
 .paymenth .orange-text{
     display: inline-block;
     font-family: 'Harmonia_bold';
@@ -887,6 +921,8 @@ footer .paymenth .paymenths-method a + a{
     margin-top: 0;
 }
 
+
+
 @media(max-width: 991px){
 
     .mobile-siderbar-btn{
@@ -915,6 +951,14 @@ footer .paymenth .paymenths-method a + a{
         bottom: 0;
         z-index: -1;
         opacity: 0;
+    }
+
+    .sidebar{
+        max-width: 400px;
+    }
+
+    .aside-section{
+        border-radius: 10px;
     }
     main.show .mobile-siderbar-wrap{
         transform: translateX(0);
