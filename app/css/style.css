@@ -286,6 +286,11 @@ label{
     color: orange;
 }
 
+.new-items .item{
+    text-align: center;
+    background-color: #fff;
+}
+
 .new-items .offer-img{
     padding: 35px 0;
 }
@@ -398,12 +403,13 @@ header .bottom-header .user-nav a + a{
 }
 
 @media(max-width: 575px){
-    .user-nav{
+    header .bottom-header .user-nav{
         -webkit-box-ordinal-group: 2;
         -webkit-order: 1;
             -ms-flex-order: 1;
                 order: 1;
         width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -559,9 +565,9 @@ footer .paymenth .paymenths-method a + a{
 }
 /*MAIN START*/
 
-.items-carousel-description{
-    padding: 230px 0;
-}
+/*.items-carousel-description{*/
+    /*padding: 230px 0;*/
+/*}*/
 
 
 .items-carousel-description p{
@@ -580,12 +586,10 @@ footer .paymenth .paymenths-method a + a{
 
 
 .item{
-    background-color: #fff;
     padding: 30px 10px;
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
-    text-align: center;
     height: 372px;
     position: relative;
 }
@@ -940,6 +944,8 @@ footer .paymenth .paymenths-method a + a{
 }
 .category-wrap .item{
     margin-bottom: 30px;
+    background-color: #fff;
+    text-align: center;
 }
 
 .product-wrap{
@@ -1149,7 +1155,6 @@ footer .paymenth .paymenths-method a + a{
 
 .item-flexslider{
     position: relative;
-    left: 10%;
 }
 
 .product-carousel .flexslider .flex-control-nav{
