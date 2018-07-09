@@ -189,19 +189,12 @@ html[xmlns] .flexslider .slides {
 .flex-pauseplay a.flex-play:before {
   content: '\f003';
 }
-.flex-control-nav {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: -100px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
+
 
 .flex-control-nav li a:hover{
   background-color: #ff5912;
 }
+
 .flex-control-nav li {
   display: block;
   zoom: 1;
@@ -209,30 +202,13 @@ html[xmlns] .flexslider .slides {
 
 }
 
-.item-flexslider .flex-control-nav li  + li{
-  margin-top: 10px;
-}
-
-.item-flexslider .flex-control-paging li a {
-  width: 10px;
-  height: 16px;
-  display: block;
-  background: #fff;
-  cursor: pointer;
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
-  color: transparent;
-}
 
 
 
-.item-flexslider .flex-control-paging li a.flex-active {
-  background-color: #ff5912;
-  width: 10px;
-  height: 35px;
-  cursor: default;
-}
+
+
+
+
 .flex-control-thumbs {
   margin: 70px 0 0;
   position: static;

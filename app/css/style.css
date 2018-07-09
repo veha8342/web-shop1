@@ -438,6 +438,8 @@ header .bottom-header .user-nav a + a{
     margin-bottom: 60px;
 }
 
+
+
 footer{
     margin-top: 60px;
 }
@@ -604,6 +606,46 @@ footer .paymenth .paymenths-method a + a{
     padding: 0 40px;
 }
 
+.item-flexslider .carousel-indicators{
+    width: auto;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 30%;
+}
+.item-flexslider .carousel-indicators li{
+    width: 10px;
+    height: 16px;
+    display: block;
+    background: #fff;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: transparent;
+}
+
+.item-flexslider .carousel-indicators .active {
+    background-color: #ff5912;
+    height: 35px;
+    cursor: default;
+}
+
+.item-flexslider .carousel-indicators li  + li{
+    margin-top: 10px;
+}
+
+.item-flexslider .carousel-inner{
+    left: 10%;
+}
+
+
+.item-flexslider .item{
+    height: auto;
+}
 
 
 .item .item-title{
