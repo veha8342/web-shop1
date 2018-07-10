@@ -639,6 +639,7 @@ footer .paymenth .paymenths-method a + a{
 }
 
 .item-flexslider .carousel-inner{
+    width: 80%;
     left: 10%;
 }
 
@@ -775,6 +776,13 @@ footer .paymenth .paymenths-method a + a{
 
 
 /*ALL STALES START*/
+
+@media(max-width: 767px){
+    .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
 .kit{
     padding: 20px 60px;
