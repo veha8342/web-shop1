@@ -438,7 +438,15 @@ header .bottom-header .user-nav a + a{
     margin-bottom: 60px;
 }
 
+@media(max-width: 767px){
+    .items-carousel{
+        min-height: 0;
+    }
 
+    .items-carousel-description .title.big{
+        font-size: 40px;
+    }
+}
 
 footer{
     margin-top: 60px;
@@ -875,6 +883,12 @@ footer .paymenth .paymenths-method a + a{
     }
 }
 
+@media(max-width: 767px){
+    .sale-basket::before{
+        display: none;
+    }
+}
+
 .offer span{
     display: -webkit-box;
     display: -webkit-flex;
@@ -944,10 +958,53 @@ footer .paymenth .paymenths-method a + a{
 
 @media(max-width: 767px){
     .kit{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-bottom: 20px;
         -webkit-justify-content: space-around;
             -ms-flex-pack: distribute;
                 justify-content: space-around;
+    }
+    .sale-text{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        left: 48%;
+        top: 17%;
+    }
+    .offer{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .offer span{
+        display: inline-block;
+    }
+    .sale-basket{
+        margin-top: 20px;
+    }
+}
+@media(max-width: 575px){
+    .sale-text{
+        left: 45%;
     }
 }
 .icon-search-ic:hover{
