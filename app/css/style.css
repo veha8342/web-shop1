@@ -322,7 +322,7 @@ label{
 
 }
 
-.best-add-to-cart span + span{
+    .best-add-to-cart a{
     margin-left: 10px;
 }
 
@@ -601,17 +601,32 @@ footer .paymenth .paymenths-method a + a{
 
 .price-wrapper a{
     margin-left: 30px;
+    margin-right: 10px;
 }
 
 .price-wrapper a .product-title{
     padding-left: 10px;
 }
 
-.price-wrapper:hover{
+
+.price-wrapper:hover .custom-icon.icon-cart-ic{
+    background-position: -20px -59px;
+}
+
+.price-wrapper:hover .product-title:last-child{
     color: #ff5912;
 }
 
-
+@media(max-width: 575px){
+    .price-wrapper .product-title:first-child{
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .price-wrapper a{
+        margin-left: 0;
+    }
+}
 .item{
     padding: 30px 10px;
     -webkit-transition: all .3s linear;
@@ -644,6 +659,8 @@ footer .paymenth .paymenths-method a + a{
 .item-flexslider .carousel-indicators li{
     width: 10px;
     height: 16px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
     display: block;
     background: #fff;
     cursor: pointer;
@@ -1226,6 +1243,8 @@ footer .paymenth .paymenths-method a + a{
 .product-show .new-items{
     margin-bottom: 0;
 }
+
+
 /*ALL STALES END*/
 
 
@@ -1289,5 +1308,15 @@ footer .paymenth .paymenths-method a + a{
 
 .flex-control-paging{
     left: -9%;
+}
+
+@media(max-width: 991px){
+    .product-carousel .flexslider{
+        margin: auto;
+    }
+
+    .product-wrap .product-description{
+        margin-top: 60px;
+    }
 }
 /*RANGE STYLE FINISH*/
