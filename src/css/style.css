@@ -407,6 +407,13 @@ header .bottom-header .user-nav a + a{
     }
 }
 
+@media(max-width: 575px){
+    .items-carousel-description .title.big{
+        font-size: 30px;
+    }
+}
+
+
 footer{
     margin-top: 60px;
 }
