@@ -1195,6 +1195,9 @@ footer .paymenth .paymenths-method a + a{
 }
 
 @media(max-width: 575px) {
+    .flexslider{
+        width: 300px;
+    }
     .flex-direction-nav{
         display: none;
     }
@@ -1226,4 +1229,6 @@ footer .paymenth .paymenths-method a + a{
         margin-top: 20px;
     }
 }
+
+
 /*RANGE STYLE FINISH*/

@@ -111,3 +111,15 @@
 .jq-number__spin.plus:hover:after {
 	background: #000;
 }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+
+	color: #000;
+}
+
+
