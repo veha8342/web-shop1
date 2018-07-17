@@ -981,7 +981,7 @@ footer .paymenth .paymenths-method a + a{
 }
 
 .product-wrap{
-    padding: 100px 125px;
+    padding: 100px 0;
     background-color: #fff;
 }
 
@@ -1191,6 +1191,39 @@ footer .paymenth .paymenths-method a + a{
 
     .product-wrap .product-description{
         margin-top: 60px;
+    }
+}
+
+@media(max-width: 575px) {
+    .flex-direction-nav{
+        display: none;
+    }
+
+    #product-option{
+        flex-wrap: wrap;
+    }
+    .choose-size{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .choose-size span{
+        font-size: 20px;
+    }
+    .quantity{
+        font-size: 20px;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .order-now{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+    .order-now input{
+        margin-top: 20px;
     }
 }
 /*RANGE STYLE FINISH*/
