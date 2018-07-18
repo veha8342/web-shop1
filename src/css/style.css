@@ -1196,7 +1196,7 @@ footer .paymenth .paymenths-method a + a{
 
 @media(max-width: 575px) {
     .flexslider{
-        width: 300px;
+        width: 285px;
     }
     .flex-direction-nav{
         display: none;
